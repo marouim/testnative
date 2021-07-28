@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  nativetest:
+    image: ${DOCKER_REGISTRY-}nativetest
+    build:
+      context: .
+      dockerfile: nativetest/Dockerfile
